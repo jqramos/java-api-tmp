@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/appdb
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+jwt:
+  secretKey: jf45KiR+Y0Gey+TooT1BetX0arquLzwWOnm4CSh6nEy1p47xHXvtA/CZ5dKj3V6n3tQbyON065Det+wmLCv30kxR3XE8c9EOUjsFAKB3s1eT56ovL5jcUhJtOu/7ZtgnbPuESgdWrx63C9BbD/3EG/m4AlxylGcDCqQqIPYvpcb144utBuI2V8cO+QQxKQTHJaoL4J5WtlffjX207iKthNUycGLuG04kNCfHyaJFsAv3hJGVRQ+rdmeN4gAVMcVXU/xa9z6iEmMK4oCDYhBx7Gt0Me2L75uhsw+xAx7ezBJb3P0l+Ech6kChJobb2GDGYJvL4qJUzxk8yYRBWk+qhExAztAuWyhwj5fIjPdmbRc=
